@@ -32,10 +32,19 @@ It is built using **Java Spring Boot** and provides REST APIs to support the fro
 ##   Setup & Run Locally
 
 ### 1️⃣ Clone the repository
+
 ```bash
 git clone https://github.com/yourusername/Find-Your-College.git
 cd Find-Your-College/Backend
 
+```
+
+### 2️⃣  Configure the database
+ 
+
+Edit the src/main/resources/application.properties file:
+
+```
 spring.datasource.url=jdbc:mysql://localhost:3306/your_database
 spring.datasource.username=your_username
 spring.datasource.password=your_password
