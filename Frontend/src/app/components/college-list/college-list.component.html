@@ -1,0 +1,13 @@
+<div *ngIf="colleges.length === 0" class="text-gray-500 p-4">No colleges found.</div>
+
+<div *ngFor="let college of colleges" class="border p-4 m-2 rounded-lg shadow-md bg-white dark:bg-gray-800 dark:text-white">
+  <h2 class="text-xl font-bold">{{ college.college }} ({{ college.collegeCode }})</h2>
+  <p><strong>Branch:</strong> {{ college.branch }} ({{ college.branchCode }})</p>
+  <p><strong>Rank:</strong> {{ college.rank }}</p>
+  <!-- <p><strong>Gender:</strong> {{ college.gender }}</p> -->
+  <!-- <p><strong>Caste:</strong> {{ college.caste }}</p> -->
+  <p><strong>Region:</strong> {{ college.region }}</p>
+  <!-- <p><strong>Seat Category:</strong> {{ college.seatCategory }}</p> -->
+  <p><strong>Students/Class:</strong> {{ college.studentsPerClass }}</p>
+  <p><strong>Fee:</strong> ₹{{ college.fee }}</p>
+</div>

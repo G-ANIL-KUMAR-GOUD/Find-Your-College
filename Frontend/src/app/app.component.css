@@ -1,0 +1,88 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Background gradient */
+body, html {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+/* App container */
+/* .app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #fff;
+} */
+
+/* Header */
+.app-header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid rgba(21, 6, 6, 0.2);
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  opacity: 0.85;
+}
+
+Main content
+.app-main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.search-section,
+.details-section {
+  background: rgba(219, 24, 24, 0.15);
+  padding: 1.5rem;
+  border-radius: 10px;
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Footer */
+.app-footer {
+  text-align: center;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+  
+}
+
+
+.footer-details {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.developer-info {
+  margin-top: 10px;
+}
+.developer-info span {
+  cursor: pointer;
+  color: #03034e;
+  text-decoration: underline;
+}
+
+.info-item {
+  margin: 0 10px;
+  font-size: 0.9em;
+}
+

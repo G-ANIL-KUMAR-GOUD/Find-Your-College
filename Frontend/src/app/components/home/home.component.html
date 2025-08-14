@@ -1,0 +1,23 @@
+<div class="p-4 max-w-6xl mx-auto">
+  <!-- College Search -->
+  <!-- home.component.html -->
+<app-search-college (collegeSelected)="onSearchSubmit($event)"></app-search-college>
+
+
+  <!-- Filter & Sort -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+    <app-filter-form (filterChange)="onFilterChange($event)"></app-filter-form>
+    <br>
+    <app-sort-options (sortChange)="onSortChange($event)"></app-sort-options>
+  </div>
+
+  <!-- College List -->
+  <div class="mt-6">
+    <app-college-list [colleges]="colleges"></app-college-list>
+  </div>
+
+  <!-- College Details -->
+  <div class="mt-6">
+    <app-college-details [collegeDetails]="selectedCollegeDetails"></app-college-details>
+  </div>
+</div>

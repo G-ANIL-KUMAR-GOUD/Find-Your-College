@@ -1,0 +1,13 @@
+<div class="relative w-full max-w-md mx-auto">
+  <input type="text" [(ngModel)]="query" (ngModelChange)="onSearch()" 
+         placeholder="Search by College Name or Code"
+         class="w-full p-2 border rounded" />
+
+  <ul *ngIf="suggestions.length > 0" class="absolute z-10 w-full bg-white border mt-1 rounded shadow">
+    <li *ngFor="let college of suggestions" 
+        (click)="selectCollege(college)"
+        class="p-2 cursor-pointer hover:bg-gray-100">
+      {{ college }}
+    </li>
+  </ul>
+</div>

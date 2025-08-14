@@ -1,0 +1,30 @@
+
+<div class="flex flex-col md:flex-row gap-4 mt-4 items-center">
+  <select
+    aria-label="Sort By"
+    [(ngModel)]="sortBy"
+    class="p-2 border rounded w-full md:w-auto"
+  >
+    <option value="">Sort By</option>
+    <option value="college">College Name</option>
+    <option value="rank">Rank</option>
+    <option value="fee">Fee</option>
+    <option value="students">Students per Class</option>
+  </select>
+
+  <select
+    aria-label="Order"
+    [(ngModel)]="order"
+    class="p-2 border rounded w-full md:w-auto"
+  >
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+  </select>
+
+  <button
+    (click)="applySort()"
+    class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded shadow w-full md:w-auto"
+  >
+    Apply Sort
+  </button>
+</div>

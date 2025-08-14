@@ -1,0 +1,38 @@
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center justify-center max-w-4xl mx-auto">
+  <input type="number" [(ngModel)]="rank" placeholder="Enter Rank"
+         class="p-2 border rounded" />
+
+<div>
+  <label for="gender-select" class="sr-only">Select Gender</label>
+  <select id="gender-select" [(ngModel)]="gender" 
+  class="p-2 border rounded">
+    <option value="">All Genders</option>
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+</div>
+
+<div>
+  <label for="branch"  class="branches sr-only">Enter Branch Code</label>
+  <select id="branch" class="p-2 border rounded w-full " [(ngModel)]="branch">
+    <option value="">Select Branch</option>
+    <option value="cse">COMPUTER SCIENCE AND ENGINEERING</option>
+    <option value="civ">CIVIL ENGINEERING</option>
+    <option value="ece">ELECTRONICS AND COMMUNICATION ENGINEERING</option>
+    <option value="mec">MECHANICAL ENGINEERING</option>
+    <option value="che">CHEMICAL ENGINEERING</option>
+    <option value="met">METALLURGICAL ENGINEERING</option>
+    <option value="eee">ELECTRICAL AND ELECTRONICS ENGINEERING</option>
+    <option value="csd">COMPUTER SCIENCE AND ENGINEERING (DATA SCIENCE)</option>
+    <option value="csm">COMPUTER SCIENCE AND ENGINEERING (ARTIFICIAL INTELLIGENCE AND MACHINE LEARNING)</option>
+  </select>
+</div >
+  <!-- <input type="text" [(ngModel)]="branch" placeholder="Enter Branch Code"
+         class="p-2 border rounded" /> -->
+    <div  class="col-span-1 md:col-span-3 flex justify-center">
+      <button  (click)="applyFilters()" class="col-span-1 md:col-span-3 bg-blue-500 text-white px-4 py-2 rounded shadow">
+        Apply Filters
+      </button>
+    </div>
+</div>

@@ -1,0 +1,46 @@
+<div class="college-details-container" *ngIf="!loading && collegeDetails.length">
+  
+  <!-- College Name (from first record) -->
+  <h2 class="college-name">
+    {{ collegeDetails[0].college }}
+  </h2>
+
+  <!-- College Details Table -->
+  <table class="college-table">
+    <thead>
+      <tr>
+        <th>Branch</th>
+        <th>Branch Code</th>
+        <th>Max Rank</th>
+        <th>Fee (₹)</th>
+        <th>Students/Class</th>
+        <th>Region</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let branch of collegeDetails">
+        <td>{{ branch.branch }}</td>
+        <td>{{ branch.branchCode }}</td>
+        <td>{{ branch.rank }}</td>
+        <td>{{ branch.fee | currency:'INR' }}</td>
+        <td>{{ branch.studentsPerClass }}</td>
+        <td>{{ branch.region }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- Loading Spinner -->
+<div class="loading" *ngIf="loading">
+  Loading college details...
+</div>
+
+<!-- Error Message -->
+<div class="error-message" *ngIf="error">
+  {{ error }}
+</div>
+
+<!-- No Data Found -->
+<div class="no-data" *ngIf="!loading && !collegeDetails.length && !error">
+  No details found for this college.
+</div>

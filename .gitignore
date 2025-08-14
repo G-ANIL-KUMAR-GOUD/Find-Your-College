@@ -1,0 +1,74 @@
+  GNU nano 7.2     .gitignore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Help    ^O Write Ou^W Where Is^K Cut      
+^X Exit    ^R Read Fil^\ Replace ^U Paste      GNU nano 7.2     .gitignore
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+^G Help    ^O Write Ou^W Where Is^K Cut      
+^X Exit    ^R Read Fil^\ Replace ^U Paste    # ===== Node / Angular =====
+node_modules/
+dist/
+tmp/
+.angular/
+package-lock.json
+npm-debug.log
+yarn-error.log
+
+# ===== Java / Spring Boot =====
+target/
+bin/
+build/
+*.log
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.iml
+
+# ===== OS files =====
+.DS_Store
+Thumbs.db
+
