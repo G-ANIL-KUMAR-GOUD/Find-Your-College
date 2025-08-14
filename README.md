@@ -59,16 +59,15 @@ Angular (UI)  ──► REST API calls ──► Spring Boot (Controllers → Se
 ## ⚙️ Tech Stack
 
 - **Frontend:** Angular, Tailwind CSS
-- **Backend:** Java 17+, Spring Boot 3+, Spring Web, Spring Data JPA
+- **Backend:** Java 17+, Spring Boot , Spring Web, Spring Data JPA
 - **Build:** Maven
-- **DB:** MySQL / PostgreSQL (configurable)
+- **DB:** MySQL 
 
 ---
 
 ## 🚀 Run Locally
 
 ### Prerequisites
-- Node.js 18+ & npm
 - Java JDK 17+
 - Maven 3.9+
 - A running SQL database (or adapt to your setup)
@@ -113,9 +112,9 @@ export const environment = { apiBaseUrl: 'http://localhost:8080/api' };
 | GET    | `/api/colleges/{code}`          | –                                        | College details by code        |
 | GET    | `/api/branches`                 | –                                        | Branch metadata for dropdown   |
 
-> Adjust to your actual controller paths if they differ.
 
 ---
+
 
 ## 🧪 Project Structure
 
@@ -134,12 +133,6 @@ Find-Your-College/
 ```
 
 ---
-
-## 📦 Deployment Tips
-
-- **Render / Railway** for the Spring Boot API (simple Git deploy).
-- **Netlify / Vercel** for the Angular static site (build → `dist/<project>`).
-- Or **bundle the Angular dist** into `Backend/src/main/resources/static/` for a **single JAR** deployment.
 
 ---
 
