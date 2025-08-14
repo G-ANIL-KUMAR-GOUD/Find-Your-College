@@ -14,10 +14,10 @@ It is built using **Java Spring Boot** and provides REST APIs to support the fro
 ---
 
 ##  Tech Stack
-- **Java 17** (or your Java version)
+- **Java 17** 
 - **Spring Boot** (Web, JPA, etc.)
 - **Maven** for dependency management
-- **MySQL / PostgreSQL** (specify your DB)
+- **MySQL 
 
 ---
 
@@ -49,7 +49,9 @@ spring.datasource.url=jdbc:mysql://localhost:3306/your_database
 spring.datasource.username=your_username
 spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
-
+```
+3️⃣ Build and run
+```
 mvn clean install
 mvn spring-boot:run
 
